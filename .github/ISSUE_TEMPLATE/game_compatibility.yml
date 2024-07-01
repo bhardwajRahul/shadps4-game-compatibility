@@ -5,21 +5,21 @@ body:
     id: game-name
     attributes:
       label: Game Name
-      placeholder: Game Name
+      placeholder: "Game Name"
     validations:
       required: true
   - type: input
     id: game-code
     attributes:
       label: Game code
-      placeholder: *(e.g. CUSA10005)*
+      placeholder: "e.g. CUSA10005"
     validations:
       required: true
   - type: input  
     id: game-version
     attributes:
       label: Game version
-      placeholder: *(e.g. v1.00)*
+      placeholder: "e.g. v1.00"
     validations:
       required: true
   - type: input
