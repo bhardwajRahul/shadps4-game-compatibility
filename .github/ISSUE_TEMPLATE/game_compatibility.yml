@@ -12,7 +12,7 @@ body:
     id: game-code
     attributes:
       label: Game code
-      placeholder:*(e.g. CUSA10005)*
+      placeholder: *(e.g. CUSA10005)*
     validations:
       required: true
   - type: input  
