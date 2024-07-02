@@ -1,8 +1,9 @@
-# shadps4-game-compatibility
-Shadps4 game compatibility
+# shadPS4 Game Compatibility
+
+This is the compatibility tracker for PlayStation 4 games on shadPS4.
 
 Rules:
 
-- Post only results from official shadps4 builds (For now it is 0.1.0)
-- Make sure to put all neccesary info , game id , game version and game name
-- To be filled..
+- Only publish results from major [**shadPS4 releases**](https://github.com/shadps4-emu/shadPS4/releases) (e.g. 0.1.0).
+- Make sure you put all the necessary information: Title, Game ID and Version.
+- To be filled...
