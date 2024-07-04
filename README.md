@@ -6,4 +6,17 @@ Rules:
 
 - Only publish results from major [**shadPS4 releases**](https://github.com/shadps4-emu/shadPS4/releases) (e.g. 0.1.0).
 - Make sure you put all the necessary information: Title, Game ID and Version.
-- To be filled...
+
+
+# Info
+
+Shadps4 can load some modules in lle mode, some are neccesary some have HLE replacements. The folllowing fw modules are supported and must be placed under user/sys_modules folder.Tested fw modules are from fw 11.00
+
+- libSceNgs2.sprx
+- libSceLibcInternal.sprx
+- libSceDiscMap.sprx
+- libSceRtc.sprx
+- libSceJpegEnc.sprx
+- libSceJson2.sprx
+
+Above modules should be extracted from your ps4 . We don't provide any info or support of how to do it.
