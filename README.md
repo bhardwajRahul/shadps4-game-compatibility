@@ -22,5 +22,9 @@ Shadps4 can load some modules in lle mode, some are neccesary some have HLE repl
 - libSceJson.sprx
 - libSceFiber.sprx
 - libSceUlt.sprx
+- libSceCesCs.sprx
+- libSceFont.sprx
+- libSceRazorCpu.srpx
+- libSceRudp.sprx
 
 Above modules should be extracted from your ps4 . We don't provide any info or support of how to do it.
