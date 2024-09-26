@@ -41,6 +41,16 @@ body:
         - Nothing      
     validations:
       required: true
+  - type: dropdown
+    id: Operating System (host)
+    attributes:
+      label: Operating System
+      options:
+        - Windows
+        - Linux
+        - MacOs   
+    validations:
+      required: true
   - type: textarea
     id: emulation-error
     attributes:
