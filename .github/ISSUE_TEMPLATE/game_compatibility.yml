@@ -42,7 +42,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: Operating System
+    id: Operating-System
     attributes:
       label: Operating System
       options:
