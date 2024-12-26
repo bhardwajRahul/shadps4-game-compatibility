@@ -11,7 +11,7 @@ Rules:
 
 # Info
 
-shadPS4 can load some modules in LLE mode, some are neccesary and some have HLE replacements. The folllowing firmware modules are supported and must be placed under `user/sys_modules` folder. Tested FW modules are from 11.00.
+shadPS4 can load some modules in LLE mode, some are neccesary and some have HLE replacements. The following firmware modules are supported and must be placed under `user/sys_modules` folder. Tested FW modules are from 11.00.
 
 - libSceNgs2.sprx
 - libSceFiber.sprx
