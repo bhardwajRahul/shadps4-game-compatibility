@@ -15,7 +15,7 @@ body:
       placeholder: "e.g. CUSA10005"
     validations:
       required: true
-  - type: input  
+  - type: input
     id: game-version
     attributes:
       label: Game version
@@ -26,7 +26,7 @@ body:
     id: emulator-version
     attributes:
       label: Used emulator's version (only released versions are acceptable)
-      placeholder: "e.g v0.5.0, no WIP allowed"
+      placeholder: "e.g v0.5.0, and not v0.5.1"
     validations:
       required: true
   - type: dropdown
@@ -38,7 +38,7 @@ body:
         - Boots
         - Menus
         - Ingame
-        - Playable    
+        - Playable
     validations:
       required: true
   - type: dropdown
@@ -48,14 +48,14 @@ body:
       options:
         - Windows
         - Linux
-        - MacOs   
+        - macOs
     validations:
       required: true
   - type: textarea
     id: emulation-error
     attributes:
       label: Error
-      placeholder: PLease provides last lines of the log
+      placeholder: Please provides last lines of the log.
     validations:
       required: true
   - type: textarea
@@ -77,7 +77,7 @@ body:
     id: log
     attributes:
       label: Log File
-      description: Logs files can be found at user/log
+      description: Logs files can be found at user/log.
       placeholder: Drag and drop the log file onto the text area.
     validations:
       required: true
