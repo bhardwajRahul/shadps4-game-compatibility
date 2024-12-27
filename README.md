@@ -2,6 +2,19 @@
   <b>shadPS4 Game Compatibility</b>
 </h1>
 
+<h2 align="center">
+<a href="https://github.com/shadps4-emu/shadps4-game-compatibility/labels/status-nothing">
+    <img src="https://img.shields.io/github/issues-search/shadps4-emu/shadps4-game-compatibility?query=is%3Aopen+label%3Astatus-nothing&style=for-the-badge&color=black&label=Nothing"/>
+<a href="https://github.com/shadps4-emu/shadps4-game-compatibility/labels/status-boots">
+    <img src="https://img.shields.io/github/issues-search/shadps4-emu/shadps4-game-compatibility?query=is%3Aopen+label%3Astatus-boots&style=for-the-badge&color=red&label=Boots"/>
+<a href="https://github.com/shadps4-emu/shadps4-game-compatibility/labels/status-menus">
+    <img src="https://img.shields.io/github/issues-search/shadps4-emu/shadps4-game-compatibility?query=is%3Aopen+label%3Astatus-menus&style=for-the-badge&color=orange&label=Menus"/>
+<a href="https://github.com/shadps4-emu/shadps4-game-compatibility/labels/status-ingame">
+    <img src="https://img.shields.io/github/issues-search/shadps4-emu/shadps4-game-compatibility?query=is%3Aopen+label%3Astatus-ingame&style=for-the-badge&color=yellow&label=Ingame"/>
+<a href="https://github.com/shadps4-emu/shadps4-game-compatibility/labels/status-playable">
+    <img src="https://img.shields.io/github/issues-search/shadps4-emu/shadps4-game-compatibility?query=is%3Aopen+label%3Astatus-playable&style=for-the-badge&color=green&label=Playable"/>
+</h2>
+
 ### Rules:
 
 - Only publish results from major [**shadPS4 releases**](https://github.com/shadps4-emu/shadPS4/releases) (e.g. 0.5.0).
@@ -9,14 +22,6 @@
 - Don't edit posts, just reply to them. That way we can check what's changed from previous version.
 - Since compatibility between different OS varies, we allow one report per system-OS (Windows, Linux and macOS). So duplicate entries can exist if they are for different OS.
 - You can publish the same game only if the CUSA is different (e.g. Bloodborne = CUSA00900 & CUSA03173)
-
-### To see where the status is for the games:
-
-- [**Nothing**](https://github.com/shadps4-emu/shadps4-game-compatibility/labels/status-nothing)
-- [**Boots**](https://github.com/shadps4-emu/shadps4-game-compatibility/labels/status-boots)
-- [**Menus**](https://github.com/shadps4-emu/shadps4-game-compatibility/labels/status-menus)
-- [**Ingame**](https://github.com/shadps4-emu/shadps4-game-compatibility/labels/status-ingame)
-- [**Playable**](https://github.com/shadps4-emu/shadps4-game-compatibility/labels/status-playable)
 
 ## Informations
 
