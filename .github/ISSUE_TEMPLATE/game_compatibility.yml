@@ -55,7 +55,7 @@ body:
     id: emulation-error
     attributes:
       label: Error
-      placeholder: Please provides last lines of the log.
+      placeholder: Do not describe what is happening but copy and paste the error in the last lines of log (Except for the playable status)
     validations:
       required: true
   - type: textarea
