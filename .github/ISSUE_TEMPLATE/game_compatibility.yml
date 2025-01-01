@@ -8,6 +8,7 @@ body:
       placeholder: "Game Name"
     validations:
       required: true
+
   - type: input
     id: game-code
     attributes:
@@ -15,6 +16,7 @@ body:
       placeholder: "e.g. CUSA10005"
     validations:
       required: true
+
   - type: input
     id: game-version
     attributes:
@@ -22,13 +24,15 @@ body:
       placeholder: "e.g. v01.00"
     validations:
       required: true
+
   - type: input
     id: emulator-version
     attributes:
       label: Used emulator's version (only released versions are acceptable)
-      placeholder: "e.g v0.5.0, and not v0.5.1"
+      placeholder: "e.g v0.5.0, and not v0.5.1 WIP"
     validations:
       required: true
+
   - type: dropdown
     id: emulation-status
     attributes:
@@ -41,6 +45,7 @@ body:
         - Playable
     validations:
       required: true
+
   - type: dropdown
     id: Operating-System
     attributes:
@@ -51,13 +56,15 @@ body:
         - macOs
     validations:
       required: true
+
   - type: textarea
     id: emulation-error
     attributes:
       label: Error
-      placeholder: Do not describe what is happening but copy and paste the error in the last lines of log (Except for the playable status)
+      placeholder: (Leave blank if status is playable) Don't describe what is happening but copy and paste the error in the last lines of log (Often it starts with [Debug] <Critical>)
     validations:
       required: true
+
   - type: textarea
     id: emulation-description
     attributes:
@@ -65,6 +72,7 @@ body:
       placeholder: What can you see, if the sound is good, graphics, glitches, etc ...
     validations:
       required: true
+
   - type: textarea
     id: screenshot
     attributes:
@@ -73,6 +81,7 @@ body:
       placeholder: Drag and drop the images/screenshots onto the text area.
     validations:
       required: false
+
   - type: textarea
     id: log
     attributes:
