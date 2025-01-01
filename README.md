@@ -15,7 +15,7 @@
     <img src="https://img.shields.io/github/issues-search/shadps4-emu/shadps4-game-compatibility?query=is%3Aopen+label%3Astatus-playable&style=for-the-badge&color=8BA503&label=Playable"/>
 </h2>
 
-### Rules:
+## Rules:
 
 - Only publish results from major [**shadPS4 releases**](https://github.com/shadps4-emu/shadPS4/releases) (e.g. 0.5.0).
 - Make sure you put all the necessary information: **Title**, **Game ID** and **Version**.
@@ -27,7 +27,7 @@
 
 shadPS4 can load some modules in **LLE** mode, some are necessary and some have **HLE** replacements.\
 The following firmware modules are supported and must be placed under `user/sys_modules` folder.\
-Tested FW modules are from **11.00**.
+Tested firmware modules are from **11.00**.
 
 - **libSceNgs2.sprx**
 - **libSceFiber.sprx**
@@ -43,6 +43,6 @@ Tested FW modules are from **11.00**.
 - **libSceFontFt.sprx**
 - **libSceFreeTypeOt.sprx**
 
-> [!IMPORTANT]
-> The above modules are required to run the games properly and must be extracted from your PS4.
+> [!Caution]
+> The above modules are required to run the games properly and must be extracted from your PlayStation 4.\
 > **We do not provide any information or support on how to do this**.
