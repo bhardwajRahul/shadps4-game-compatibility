@@ -5,7 +5,7 @@ body:
     attributes:
       value: |
         ## Important: Read First
-        - We only accept test on major release and not nightly build. For Example: 0.5.0 and not 0.5.1 WIP
+        - We only accept test on major release and not nightly build. For Example: 0.6.0 and not 0.6.1 WIP
         - Only games or homebrew made expressly for the PlayStation 4. You can check here: https://www.serialstation.com/games/
         - By opening a new topic, you affirm that you have checked that it has not already been tested.
         - You must own your game, it must come from your own dump.
@@ -37,7 +37,7 @@ body:
     id: emulator-version
     attributes:
       label: Used emulator's version (only major released versions are acceptable)
-      placeholder: "e.g v0.5.0, and not v0.5.1 WIP"
+      placeholder: "e.g v0.6.0, and not v0.6.1 WIP"
     validations:
       required: true
 
