@@ -17,7 +17,7 @@
 
 ## Rules:
 
-- Only publish results from major [**shadPS4 releases**](https://github.com/shadps4-emu/shadPS4/releases) (e.g. 0.5.0).
+- Only publish results from major [**shadPS4 releases**](https://github.com/shadps4-emu/shadPS4/releases) (e.g. 0.6.0).
 - Make sure you put all the necessary information: **Title**, **Game ID** and **Version**.
 - Don't edit posts, just reply to them. That way we can check what's changed from previous version.
 - Since compatibility between different OS varies, we allow one report per system-OS (Windows, Linux and macOS). So duplicate entries can exist if they are for different OS.
