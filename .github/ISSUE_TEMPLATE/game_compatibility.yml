@@ -61,7 +61,7 @@ body:
       options:
         - Windows
         - Linux
-        - macOs
+        - macOS
     validations:
       required: true
 
