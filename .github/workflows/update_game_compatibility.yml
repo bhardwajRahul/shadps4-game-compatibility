@@ -36,7 +36,6 @@ jobs:
               TITLE=$( _jq '.title' )
               ISSUE_NUMBER=$( _jq '.number' )
               UPDATED_AT=$( _jq '.updated_at' )
-              HTML_URL=$( _jq '.html_url' )
               MILESTONE=$( _jq '.milestone' )
 
               if [ "$MILESTONE" == "null" ]; then
@@ -64,13 +63,11 @@ jobs:
                   --arg issue_number "$ISSUE_NUMBER" \
                   --arg last_tested "$UPDATED_AT" \
                   --arg status "$STATUS" \
-                  --arg url "$HTML_URL" \
                   --arg version "$VERSION" \
                   '{
                     issue_number: $issue_number,
                     last_tested: $last_tested,
                     status: $status,
-                    url: $url,
                     version: $version
                   }')
 
@@ -94,34 +91,27 @@ jobs:
           # Save the final JSON
           echo "$COMPATIBILITY_DATABASE" > compatibility_data.json
 
-      - name: Delete previous tags (if needed)
-        run: |
-          # List all tags
-          TAGS=$(curl -s -H "Authorization: token ${{ secrets.SHADPS4_TOKEN_COMPATIBILITY }}" https://api.github.com/repos/${{ github.repository }}/tags)
-
-          # Iterate over each tag and delete it if it exists
-          for tag in $(echo "$TAGS" | jq -r '.[].name'); do
-            echo "Deleting tag $tag"
-            curl -s -X DELETE -H "Authorization: token ${{ secrets.SHADPS4_TOKEN_COMPATIBILITY }}" \
-              "https://api.github.com/repos/${{ github.repository }}/git/refs/tags/$tag"
-          done
-
-      - name: Check if Release 'shadps4-game-compatibility' exists and delete it
+      - name: Delete all releases and tags
         run: |
           # List all releases
           RELEASES=$(curl -s -H "Authorization: token ${{ secrets.SHADPS4_TOKEN_COMPATIBILITY }}" https://api.github.com/repos/${{ github.repository }}/releases)
 
-          # Find the release ID with the name 'shadps4-game-compatibility'
-          RELEASE_ID=$(echo "$RELEASES" | jq -r '.[] | select(.name == "shadps4-game-compatibility") | .id')
-
-          # If you find the release, delete it.
-          if [ -n "$RELEASE_ID" ]; then
-            echo "Release 'shadps4-game-compatibility' found. Deleting..."
+          # Iterate over each release and delete it
+          for release in $(echo "$RELEASES" | jq -r '.[].id'); do
+            echo "Deleting release with ID: $release"
             curl -s -X DELETE -H "Authorization: token ${{ secrets.SHADPS4_TOKEN_COMPATIBILITY }}" \
-              "https://api.github.com/repos/${{ github.repository }}/releases/$RELEASE_ID"
-          else
-            echo "No releases named 'shadps4-game-compatibility' found."
-          fi
+              "https://api.github.com/repos/${{ github.repository }}/releases/$release"
+          done
+
+          # List all tags
+          TAGS=$(curl -s -H "Authorization: token ${{ secrets.SHADPS4_TOKEN_COMPATIBILITY }}" https://api.github.com/repos/${{ github.repository }}/tags)
+
+          # Iterate over each tag and delete it
+          for tag in $(echo "$TAGS" | jq -r '.[].name'); do
+            echo "Deleting tag: $tag"
+            curl -s -X DELETE -H "Authorization: token ${{ secrets.SHADPS4_TOKEN_COMPATIBILITY }}" \
+              "https://api.github.com/repos/${{ github.repository }}/git/refs/tags/$tag"
+          done
 
       - name: Create a GitHub Release and Upload Data
         run: |
