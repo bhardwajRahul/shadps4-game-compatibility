@@ -9,6 +9,7 @@ body:
         - Only games or homebrew made expressly for the PlayStation 4. You can check here: https://www.serialstation.com/games/
         - By opening a new topic, you affirm that you have checked that it has not already been tested.
         - You must own your game, it must come from your own dump.
+        - Make sure your log is set to "Sync" and not "Async".
   - type: input
     id: game-name
     attributes:
@@ -94,7 +95,7 @@ body:
     id: log
     attributes:
       label: Log File
-      description: Logs files can be found at user/log.
+      description: Logs files can be found at user/log. Make sure it is set to "Sync" in the emulator options.
       placeholder: Drag and drop the log file onto the text area.
     validations:
       required: true
