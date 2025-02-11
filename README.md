@@ -29,17 +29,15 @@ shadPS4 can load some modules in **LLE** mode, some are necessary and some have 
 The following firmware modules are supported and must be placed under `user/sys_modules` folder.\
 Tested firmware modules are from **11.00**.
 
-- **libSceNgs2.sprx**
-- **libSceUlt.sprx**
-- **libSceJson.sprx**
-- **libSceJson2.sprx**
-- **libSceLibcInternal.sprx**
-- **libSceDiscMap.sprx**
-- **libSceRtc.sprx**
-- **libSceCesCs.sprx**
-- **libSceFont.sprx**
-- **libSceFontFt.sprx**
-- **libSceFreeTypeOt.sprx**
+<div align="center">
+
+| Modules                 | Modules                 | Modules                 | Modules                 |  
+|-------------------------|-------------------------|-------------------------|-------------------------|  
+| libSceCesCs.sprx        | libSceDiscMap.sprx      | libSceFont.sprx         | libSceFontFt.sprx       |  
+| libSceFreeTypeOt.sprx   | libSceJson.sprx         | libSceJson2.sprx        | libSceLibcInternal.sprx |  
+| libSceNgs2.sprx         | libSceRtc.sprx          | libSceUlt.sprx          |                         |  
+
+</div>
 
 > [!Caution]
 > The above modules are required to run the games properly and must be extracted from your PlayStation 4.\
