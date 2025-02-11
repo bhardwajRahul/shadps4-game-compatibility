@@ -91,6 +91,18 @@ jobs:
           # Save the final JSON
           echo "$COMPATIBILITY_DATABASE" > compatibility_data.json
 
+      - name: Verify Compatibility Data file size
+        run: |
+          FILE_SIZE=$(stat -c %s compatibility_data.json)
+          MAX_FILE_SIZE=307200  # 300 KB in bytes
+
+          if [ "$FILE_SIZE" -lt "$MAX_FILE_SIZE" ]; then
+            echo "Compatibility data file is too small ($FILE_SIZE bytes), skipping release creation."
+            exit 0  # Exit the job to prevent further steps
+          else
+            echo "Compatibility data file is valid ($FILE_SIZE bytes). Proceeding with release creation."
+          fi
+
       - name: Delete all releases and tags
         run: |
           # List all releases
