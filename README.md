@@ -15,13 +15,11 @@
 <img src="https://img.shields.io/github/issues-search/shadps4-emu/shadps4-game-compatibility?query=is%3Aopen+label%3Astatus-nothing&style=for-the-badge&color=black&label=Nothing"/>
 </h2>
 
-</h3>
 - **status-playable**: Games that can be run without any issues.
 - **status-ingame**: Games that can reach gameplay but have issues.
 - **status-menus**: Games that can reach the menu but freeze/crash when trying to proceed further.
 - **status-boots**: Games that show any visual/audio output but freeze/crash before reaching the menu.
 - **status-nothing**: Games that crash when trying to launch or only show a black screen.
-</h3>
 
 ## Rules:
 
