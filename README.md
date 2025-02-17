@@ -28,6 +28,7 @@
 - Don't edit posts, just reply to them. That way we can check what's changed from previous version.
 - Since compatibility between different OS varies, we allow one report per system-OS (Windows, Linux and macOS). So duplicate entries can exist if they are for different OS.
 - You can publish the same game only if the CUSA is different (e.g. Bloodborne = CUSA00900 & CUSA03173)
+- Only publish reports with unmodified game dumps. If any patches or modifications are applied, the report will be removed.
 
 ## Informations
 
