@@ -6,7 +6,7 @@ body:
       value: |
         ## Important: Read First
         - We only accept tests on major releases and not nightly builds. For example: 0.6.0 and not 0.6.1 WIP
-        - Only test games or homebrew made for the PlayStation 4. You can find a list of games here: https://www.serialstation.com/games/
+        - Only test officially released Playstation 4 games. You can find a list of games here: https://www.serialstation.com/games/
         - You've made sure there are no other issues opened for this game and operating system combo.
         - Your game dump must come from a copy of the game you own.
         - Your game dump must be unmodified, and you must not enable any game patches.
