@@ -5,11 +5,12 @@ body:
     attributes:
       value: |
         ## Important: Read First
-        - We only accept test on major release and not nightly build. For Example: 0.6.0 and not 0.6.1 WIP
-        - Only games or homebrew made expressly for the PlayStation 4. You can check here: https://www.serialstation.com/games/
+        - We only accept tests on major release and not nightly build. For Example: 0.6.0 and not 0.6.1 WIP
+        - Only test games or homebrew made for the PlayStation 4. You can find a list of games here: https://www.serialstation.com/games/
         - By opening a new topic, you affirm that you have checked that it has not already been tested.
         - You must own your game, it must come from your own dump.
-        - Make sure your log is set to "Sync" and not "Async".
+        - Your game dump must be unmodified, and you must not enable any game patches.
+        - Make sure your log is set to "sync" and not "async".
   - type: input
     id: game-name
     attributes:
