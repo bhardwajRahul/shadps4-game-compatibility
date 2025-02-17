@@ -73,7 +73,7 @@ body:
       label: Error
       placeholder: (Leave blank if status is playable) Don't describe what is happening but copy and paste the error in the last lines of log (Often it starts with [Debug] <Critical>)
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: emulation-description
