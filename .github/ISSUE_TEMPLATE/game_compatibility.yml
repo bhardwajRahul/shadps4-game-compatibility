@@ -5,11 +5,12 @@ body:
     attributes:
       value: |
         ## Important: Read First
-        - We only accept test on major release and not nightly build. For Example: 0.6.0 and not 0.6.1 WIP
-        - Only games or homebrew made expressly for the PlayStation 4. You can check here: https://www.serialstation.com/games/
-        - By opening a new topic, you affirm that you have checked that it has not already been tested.
-        - You must own your game, it must come from your own dump.
-        - Make sure your log is set to "Sync" and not "Async".
+        - We only accept tests on major releases and not nightly builds. For example: 0.6.0 and not 0.6.1 WIP
+        - Only test officially released Playstation 4 games. You can find a list of games here: https://www.serialstation.com/games/
+        - You've made sure there are no other issues opened for this game and operating system combo.
+        - Your game dump must come from a copy of the game you own.
+        - Your game dump must be unmodified, and you must not enable any game patches.
+        - Make sure your logging type is set to "sync" and not "async".
   - type: input
     id: game-name
     attributes:
@@ -72,7 +73,7 @@ body:
       label: Error
       placeholder: (Leave blank if status is playable) Don't describe what is happening but copy and paste the error in the last lines of log (Often it starts with [Debug] <Critical>)
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: emulation-description
@@ -95,7 +96,7 @@ body:
     id: log
     attributes:
       label: Log File
-      description: Logs files can be found at user/log. Make sure it is set to "Sync" in the emulator options.
+      description: Log files can be found in the user/log folder. Make sure the logging type is set to "sync" in the emulator settings.
       placeholder: Drag and drop the log file onto the text area.
     validations:
       required: true
