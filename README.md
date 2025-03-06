@@ -28,7 +28,7 @@
 - Since compatibility between different OS varies, we allow one report per system-OS (Windows, Linux and macOS). So duplicate entries can exist if they are for different OS.
 - You can publish the same game only if the CUSA is different (e.g. Bloodborne = CUSA00900 & CUSA03173)
 - If the CUSA is the same as an older report, comment on the older report with the game's new status, a description of how it behaved, any screenshots you took, and a log.
-- Only publish reports with unmodified game dumps. If any patches or modifications are applied, the report will be removed.
+- Only publish reports with unmodified game dumps. If any patches or modifications are applied, the report will be removed. Repackaging your dumps to fpkgs will be treated the same way.
 
 ## Information:
 
